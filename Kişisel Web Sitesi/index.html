@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="box">
+        <div class="image">
+            <img src="./images.jfif" alt="">
+        </div> <div class="info">
+            <br>
+            <br>
+            <h2>Musa Halil Ecer</h2>
+            <h4>Web Developer</h4>
+            
+            <h4>Mobile Developer</h4>
+    
+            <h4>Data Scientist</h4>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium doloribus vitae ipsa? Est accusamus
+             maxime voluptatum tenetur facere.</p>
+        </div>
+        <div class="icons">
+            <div class="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="github">
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </div>
+    </div>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: url(./nature-3106216_960_720.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .box{
+            position: absolute;
+            height: 570px;
+            width: 550px;
+            background: #6b5858;
+            top: 50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+            opacity: 0.7;
+            transition: 0.6s;
+        }
+        .box:hover{
+            opacity: 1;
+        }
+        .box .image{
+            position: absolute;
+            left: 25%;
+            opacity: 1;
+        }
+        .box .image img{
+            position: fixed; 
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+            max-width: 250px;
+            height: 100%;
+            max-height: 180px;
+            border-radius: 70%;
+            margin: auto;
+            margin-top: 50px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .box .image img:hover{
+            max-height: 200px;
+            max-width: 270px;
+            transition: 0.4s;
+        }
+        .box .info{
+            position:relative;
+            top: 40%;
+            left: 27%; 
+            /* background-color: lightcyan; */
+            height: 200px;
+            width: 270px;
+        }
+        .box .info h2{
+            font-size: 35px;
+            color: white;
+        }
+        .box .info h4{
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+        .box .info p{
+            color: bisque;
+        }
+        .box .icons{
+            position: absolute;
+            display: flex;
+            top: 82%;
+            left: 25%;
+            height: 100px;
+            padding-top: -10px;
+            width: 350px;
+            /* background-color: lightgoldenrodyellow; */
+            margin-right: 50%;
+        }
+        .box .icons i{
+            position: relative;
+            text-align: center;
+            margin: 40px 20px;
+            font-size: 40px;
+            cursor:pointer;
+            color: white;
+        }
+        .box .icons:hover{
+            background-color:grey;
+            transition: 0.5s;
+            border-radius: 20px;
+        }
+        .box .icons:hover i{
+            color:aqua;
+            transition: 0.4s;
+        }
+        .box .icons i:hover{
+            color: black;
+            transition: 0.3s;
+            font-size: 50px;
+        }
+        
+    </style>
+    
+</body>
+</html>
